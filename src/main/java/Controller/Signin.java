@@ -22,7 +22,7 @@ public class Signin {
         if (!verificarUsername(username)) {
             if (verificarPassword(password)){
                 usuario nuevoUsuario= (new usuario(nombreyApellido, username, password,foto));
-                AccessData.insertUser(nuevoUser.getUsername(),nuevoUser.getNombreyApellido(),nuevoUser.getPassword(),nuevoUser.getFoto());
+                AccessData.insertarUsuario(nuevoUsuario.getUsername(),nuevoUsuario.getnombreyApellido(),nuevoUsuario.getPassword(),nuevoUsuario.getFoto());
                 SigninController.alertSuccessfullyRegistered();
             } else SigninController.alertPasswordInvalid();
         } else SigninController.alertUserName();

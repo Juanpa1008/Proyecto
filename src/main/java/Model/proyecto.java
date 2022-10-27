@@ -10,8 +10,7 @@ public class proyecto {
     private String fechaCreacion;
     private String ultimaModificacion;
     private String repositorio;
-    private ArrayList<Model.Investigacion> investigaciones;
-    private ArrayList<Model.media> media;
+
 
 
     public proyecto (String nombre, ArrayList categorias, String fechaCreacion, String ultimaModificacion, String repositorio) {
@@ -22,8 +21,6 @@ public class proyecto {
         this.fechaCreacion = fechaCreacion;
         this.ultimaModificacion = ultimaModificacion;
         this.repositorio = repositorio;
-        this.investigaciones = new ArrayList<>();
-        this.media = new ArrayList<>();
 
     }
 
