@@ -12,18 +12,16 @@ public class usuario {
 
     /**
      * contructor para "usuario"
+     *
      * @param nombreyApellido
      * @param edad
      * @param correo
      * @param username
-     * @param password
-     * @param foto
-     * @param rol
      * @author David Huertas
      * @since 25/10/2022
      */
 
-    public usuario(String nombreyApellido, String edad, String correo, String username, String password, String foto, String rol) {
+    public usuario(String nombreyApellido, String edad, String correo, String username) {
         this.nombreyApellido = nombreyApellido;
         this.edad = edad;
         this.correo = correo;

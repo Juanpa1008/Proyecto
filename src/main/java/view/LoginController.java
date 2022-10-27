@@ -15,7 +15,7 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 
-public abstract class LoginController {
+public class LoginController {
     @FXML public Button btnSignin;
 
     @FXML public Button btnLogin;
@@ -41,7 +41,7 @@ public abstract class LoginController {
      * función para cambiar de ventana por la de Registro
      */
      public void btnClickRegistro() throws IOException {
-        FXMLLoader fxmlLoader = new FXMLLoader(Application.class.getResource("Signin.fxml"));
+        FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("Signin.fxml"));
         Parent root = fxmlLoader.load();
         SigninController controlador = fxmlLoader.getController();
         Scene scene = new Scene(root);
@@ -52,7 +52,7 @@ public abstract class LoginController {
 
         stage.setOnCloseRequest(e-> {
             try {
-                controlador.closeWindow();
+                controlador.btnBacklogin();
             } catch (IOException ex) {
                 throw new RuntimeException(ex);
             }
@@ -103,6 +103,8 @@ public abstract class LoginController {
         myStage.close();
 
     }
+
+
 
 
 }

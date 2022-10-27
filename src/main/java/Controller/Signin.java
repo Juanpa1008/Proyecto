@@ -12,12 +12,13 @@ public class Signin {
 
     /**
      * Ingresa un usuario nuevo a la base de datos, y verificando que el username de este no exista ya.
+     *
      * @param nombreyApellido Nombre completo
      * @param username Nombre del usuario
      * @param password Contraseña
      * @param foto Ubicacion de la foto de perfil
      */
-    public static void registrarUsuario (String nombreyApellido, String username, String password,String foto)  {
+    public static void registrarUsuario (String nombreyApellido, String username, String password, String foto, String text, String s, int i)  {
         if (!verificarUsername(username)) {
             if (verificarPassword(password)){
                 usuario nuevoUsuario= (new usuario(nombreyApellido, username, password,foto));
