@@ -11,7 +11,7 @@ public class usuario {
     private String rol;
 
     /**
-     * contructor para "usuario"
+     * constructor para "usuario"
      *
      * @param nombreyApellido
      * @param edad
